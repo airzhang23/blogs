@@ -259,4 +259,3 @@ those bounce back to him for another try you only end up with 6 or 7
 blocks and that may not be enough. That is where Rocks loose grip or
 spike comes in. Alright my one finger is tired of typing NEXT (how about
 one of you silent PRO MASTER TYPES filling in)      - Moonglum
-
