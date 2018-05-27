@@ -11,7 +11,7 @@ site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Lei Zhang # add your name
-author-img: lei.png # add your photo
+author-img: Lei_Profile.jpg # add your photo
 about-author: Feed my brain with knowleges. Always hungry to keep learning. # add description
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
@@ -24,21 +24,6 @@ social-email: air23zhang@qq.com # add your Email address
 #   home: '/'
 #   tags: '/tags.html
 
-## => Navigation
-##############################
-paths:
-  base: /
-  home: /
-  tags:  /tags.html
-  # rss:  /feed.xml
-
-nav_lists:
-  - titles:
-      en: About
-      zh: 关于
-      zh-Hans: 关于
-      zh-Hant: 關於
-    url: /about.html
 
 # Disqus
 discus-identifier: mr-brown # add your discus identifier
