@@ -19,6 +19,11 @@ social-github: airzhang23 # add your Github handle
 social-linkedin: # add your Linkedin handle
 social-email: air23zhang@qq.com # add your Email address
 
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html
+
 # Disqus
 discus-identifier: mr-brown # add your discus identifier
 
