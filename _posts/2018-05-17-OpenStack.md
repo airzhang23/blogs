@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bulding Private Cloud using OpenStack - VMWare篇
+img: ../../img/NTAP/private.png
 ---
 
 1. Why OpenStack from VMWare expert
