@@ -20,9 +20,25 @@ social-linkedin: # add your Linkedin handle
 social-email: air23zhang@qq.com # add your Email address
 
 # Navigation links
-nav:
-  home: '/'
-  tags: '/tags.html
+# nav:
+#   home: '/'
+#   tags: '/tags.html
+
+## => Navigation
+##############################
+paths:
+  base: /
+  home: /
+  tags:  /tags.html
+  # rss:  /feed.xml
+
+nav_lists:
+  - titles:
+      en: About
+      zh: 关于
+      zh-Hans: 关于
+      zh-Hant: 關於
+    url: /about.html
 
 # Disqus
 discus-identifier: mr-brown # add your discus identifier
