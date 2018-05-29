@@ -21,6 +21,7 @@ The post page would look like this:
 - [Disqus](https://disqus.com/)
 - [Analytics](https://analytics.google.com/analytics/web/)
 - Support Emoji
+- Favorate icon: copy favicon.ico to assets/img/favicon; Wait to take effect
 
 ## Installation:
 
