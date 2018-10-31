@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ansible Essentials Workshop Learning
-image: ansible1.jpg
+img: ansible1.jpg
 ---
 
 ### Ansible Essentials
