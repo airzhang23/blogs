@@ -3,6 +3,7 @@
 ![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
 
 ## Demo
+## Demo1
 
 Check the theme in action [Demo](https://artemsheludko.github.io/flexible-jekyll/)
 
