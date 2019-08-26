@@ -12,9 +12,7 @@ img: AWS_CSA_001.png
 
 
 
-[Interactive Diagram]: https://interactive.linuxacademy.com/diagrams/AWSSolutionsArchitectPreview.html
-
-
+[Interactive Diagram](https://interactive.linuxacademy.com/diagrams/AWSSolutionsArchitectPreview.html )
 
 ##### Day 1
 
