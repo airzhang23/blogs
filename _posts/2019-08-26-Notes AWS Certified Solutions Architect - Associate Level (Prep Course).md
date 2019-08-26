@@ -10,6 +10,12 @@ img: AWS_CSA_001.png
 
 ### Notes AWS Certified Solutions Architect - Associate Level (Prep Course) - Week 1
 
+
+
+[Interactive Diagram]: https://interactive.linuxacademy.com/diagrams/AWSSolutionsArchitectPreview.html
+
+
+
 ##### Day 1
 
 成为**M类型**的架构师。
