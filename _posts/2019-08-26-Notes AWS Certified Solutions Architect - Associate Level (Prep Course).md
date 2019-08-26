@@ -22,5 +22,14 @@ img: AWS_CSA_001.png
 
 
 
-![image-20190826140924846](../../../../Library/Application Support/typora-user-images/image-20190826140924846.png)
+![image-20190826140924846](../img/image-20190826140924846.png)
 
+
+
+- 设置AWS账号，Free Tier，安全设置
+  - Email，密码，信用卡，MFA
+  - 公司账户： Professional
+  - 个人账户：Personal
+- AWS Management Console
+  - 账号创建成功，登陆后，进入
+  - 
