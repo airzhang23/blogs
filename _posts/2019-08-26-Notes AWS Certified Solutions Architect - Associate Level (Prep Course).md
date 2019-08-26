@@ -12,7 +12,7 @@ img: AWS_CSA_001.png
 
 
 
-[Interactive Diagram](https://interactive.linuxacademy.com/diagrams/AWSSolutionsArchitectPreview.html )
+[Interactive Diagram](https://interactive.linuxacademy.com/diagrams/AWSSolutionsArchitectPreview.html)
 
 ##### Day 1
 
@@ -62,3 +62,8 @@ img: AWS_CSA_001.png
   
 
   ![image-20190826143959169](../img/image-20190826143959169.png)
+
+
+
+#### Access Management
+
