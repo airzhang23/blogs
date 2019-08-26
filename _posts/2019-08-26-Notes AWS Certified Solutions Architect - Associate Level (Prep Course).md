@@ -67,3 +67,7 @@ img: AWS_CSA_001.png
 
 #### Access Management
 
+- Principle: a person or application that can make authenticated or anonymous request to perfomr an action on a system
+- Authentication: Prove you are the person you claim to be
+- Identity: Objects that can be accessed
+- Authorization: operations that can or can't be done on Identity
