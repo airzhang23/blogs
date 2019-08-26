@@ -1,10 +1,10 @@
 ---
 
-Layout: post
+layout: post
 
-Title: AWS CSA - Associate Level 学习笔记
+title: AWS CSA - Associate Level 学习笔记
 
-Img: AWS_CSA_001.png
+img: AWS_CSA_001.png
 
 ---
 
