@@ -96,3 +96,14 @@ img: AWS_CSA_001.png
 
 ###### <img src="../img/image-20190827110419542.png" style="zoom:50%" />
 
+- HA，可以用汽车做类比。当轮胎出现问题的时候，你需要停下车子，换一个轮胎。类似Active-Passive模式。
+- FT，可以用飞机做类比。当一个引擎出现故障的时候，依然可以用剩余的引擎继续工作。这个时候不能使用HA的方式。FT其实类似于Active-Active的HA。
+
+- Disaster Recovery
+
+  ​	作为Solution Architecture，需要对DR，RPO和RTO有深入的理解，能够为客户设计出满足他们的业务需要的架构。
+
+  - RPO: Recovery **Point** Objective 发生故障时，你的backup能恢复到什么时间点的数据。例如每天晚上11点有一个备份，如果第二天10点钟发生故障，意味着有23小时的数据都没有了。
+  - RTO: Recovery **Time** Objective 从发生故障到服务重新启动的时间差，换句话说，能容忍的服务宕机时间
+
+###### <img src="../img/image-20190827112130121.png" style="zoom:50%" />
