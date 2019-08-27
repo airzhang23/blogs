@@ -4,7 +4,7 @@ layout: post
 
 title: AWS CSA - Associate Level 学习笔记 - Week 1 - Part II
 
-img: ../img/image-20190828071948649.png
+img: AWS_CSA_02.png
 
 ---
 
