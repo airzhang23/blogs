@@ -107,3 +107,42 @@ img: AWS_CSA_001.png
   - RTO: Recovery **Time** Objective 从发生故障到服务重新启动的时间差，换句话说，能容忍的服务宕机时间
 
 ###### <img src="../img/image-20190827112130121.png" style="zoom:50%" />
+
+
+
+- Scaling
+
+  - 和Elastic是不同的概念
+  - Vertical Scaling: adding resourses like CPU, memory, storage to increase, there is limit
+
+  ###### <img src="../img/image-20190827151617454.png" style="zoom:65%" />
+
+  
+
+  - Horizontal Scaling: 需要application support。通过添加更多的机器，通过横向扩展的方式拓展资源池。更加复杂，同时也更加efficient。
+
+  ###### <img src="../img/image-20190827151920045.png" style="zoom:65%" />
+
+- Tiered application design
+
+  - 3个基本层次
+
+    - Presentation
+    - Logic
+    - Data
+
+  - **基本原则**：在实现每个层次的时候，使用独立的组件。从架构上，从不同的VM，不同的pool来分配，提供资源给不同的层次。这样可以独立的进行scaling。
+
+    
+
+    ###### <img src="../img/image-20190827154324030.png" style="zoom:65%" />
+
+
+
+- Encryption
+
+  - Encryption at rest: 数据生成后，通过加密算法，对数据进行加密解密
+  - Encryption in transit：https, netflix等，数据在通讯过程中就通过加密算法实时加密解密
+  - Symmetrical（用相同的key加密和解密，解密的时候需要告诉对方密钥）, Asymmetrical （用不同的key加密和解密，即public key和private key）两种类型的算法
+
+  
