@@ -14,7 +14,7 @@ img: AWS_CSA_001.png
 
 [Interactive Diagram](https://interactive.linuxacademy.com/diagrams/AWSSolutionsArchitectPreview.html)
 
-##### Day 1
+###Day 1
 
 成为**M类型**的架构师。
 
@@ -71,3 +71,28 @@ img: AWS_CSA_001.png
 - Authentication: Prove you are the person you claim to be
 - Identity: Objects that can be accessed
 - Authorization: operations that can or can't be done on Identity
+
+###### ![image-20190827104432310](../img/image-20190827104432310.png)
+
+### Day 2
+
+- Security
+
+- Shared Responsibility: 哪些部分是用户的责任，哪些是AWS的负责的
+
+  云本身的安全是AWS负责，在云里面的安全是用户负责。
+
+  ###### ![image-20190827104502754](../img/image-20190827104502754.png)
+
+
+
+- Service Models
+  - IaaS: OS above, OS + Runtime + Application + Data
+  - PaaS: Application + Data
+  - SaaS: Data
+- HA and FT
+  - High Availability: <u>**recover quickly**</u> there is impact, outage
+  - Fault Tolerance: **<u>operate through a failure with no user impact</u>**
+
+###### <img src="../img/image-20190827110419542.png" style="zoom:50%" />
+
