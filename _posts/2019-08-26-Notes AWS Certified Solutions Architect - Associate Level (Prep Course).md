@@ -74,7 +74,7 @@ img: AWS_CSA_001.png
 
 ###### ![image-20190827104432310](../img/image-20190827104432310.png)
 
-### Day 2
+### Day 2 - Architecture 101
 
 - Security
 
@@ -137,12 +137,37 @@ img: AWS_CSA_001.png
 
     ###### <img src="../img/image-20190827154324030.png" style="zoom:65%" />
 
-
-
 - Encryption
 
   - Encryption at rest: 数据生成后，通过加密算法，对数据进行加密解密
   - Encryption in transit：https, netflix等，数据在通讯过程中就通过加密算法实时加密解密
   - Symmetrical（用相同的key加密和解密，解密的时候需要告诉对方密钥）, Asymmetrical （用不同的key加密和解密，即public key和private key）两种类型的算法
+  - 两种加密方法的例子：
 
-  
+  ```bash
+  echo "Cats are Amazing" > hiddenmessage.txt
+  gpg -c hiddenmessage.txt
+  cat hiddenmessage.txt.gpg
+  # this clears the cached password
+  echo RELOADAGENT | gpg-connect-agent
+  gpg -o output.txt hiddenmessage.txt.gpg
+  rm hiddenmessage.txt.gpg
+  rm output.txt
+  gpg --gen-key
+  gpg --armor --output pubkey.txt --export 'Adrian'
+  gpg --armor --output privkey.asc --export-secret-keys 'Adrian'
+  gpg --encrypt --recipient 'Adrian' hiddenmessage.txt
+  gpg --output decrypted.txt --decrypt hiddenmessage.txt.gpg
+  ```
+
+- 不同的架构
+  - Cost-effective architecture
+  - Secure architecture
+  - Application session state
+  - Undifferentiated heavy lifting
+
+  ![image-20190827162717520](../img/image-20190827162717520.png)
+
+
+
+- **总结**：这部分没有涉及AWS具体的服务，但是对围绕架构需要理解的概念，想法，都做了一个很好的说明。很有用的内容。这是作为架构师的思维方式的问题，是更高层面。例如，再设计应用的时候，应该按照分层的方法进行设计。这样每个层次都可以单独进行扩展。应用如果设计成松耦合，会有更好的灵活性，性能等。另外，对DR部分，用了一张很简单的图就说明了RPO和RTO的概念。针对加密，通过对一个文本文件的机密，演示了对称和非对称加密的方法，优点和缺点。小测验顺利通过，对identity，principle的概念做了加深。
