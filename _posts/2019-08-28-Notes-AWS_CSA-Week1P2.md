@@ -42,3 +42,32 @@ AWS的全球基础架构按照==分层的方式==进行的设计。
 
 
 
+- Well-Architected Framework
+
+  - A set of documents and tools: 
+
+    - [AWS Well-Architected Framework](https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf)
+    - [AWS架构完善网站](https://aws.amazon.com/cn/architecture/well-architected/)
+    - [AWS Well-Architected Tool](https://aws.amazon.com/cn/well-architected-tool/)
+
+  - A set of Best Practices, White papers, Principles
+
+  - 5 pillars
+
+    - Security
+    - Reliability
+    - Performance Effciency
+    - Operational Excellence
+    - Cost Optimization
+
+  - Elastic - 弹性
+
+    - Vertical, Horizontal, Elastic
+    - 业务量稳定型：适用于Vertical
+    - 持续线性增长型业务：适用于横向扩展
+    - 业务有周期性高低变化的：适用于Elastic，通过自动化的scaling和横向扩展的组合来实现。==scale out and in==。
+
+    从架构角度，弹性可以实现成本的优化，性能的最优化。
+
+- **总结**：截止到目前的内容都是理论上的知识。非常有指导性，是在设计架构中不可获取的关键的设计原则和理念。需要时常回顾。<u>特别是well architected里面的关于5个支柱的文档</u>，工具。
+
