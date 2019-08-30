@@ -86,7 +86,45 @@ Tips：
 
 
 - Introduction of S3: Simple Storage Service, 全球的对象存储服务。
-  - 很适合存放，视频，音频，图片，日志，大型的二进制文件等对象等
-  - 
 
-![image-20190829143946286](../assets/img/image-20190829143946286.png)
+  - 很适合存放，视频，音频，图片，日志，大型的二进制文件等对象等
+  - S3中创建或存放的目录，并不是真正意义上的目录。而是表现为目录形式的文件对象。行为上也是类似于目录。
+  - S3的bucket需要名称唯一。可以存放无限数量的对象。
+
+  ###### <img src=../assets/img/image-20190829143946286.png style="zoom:65%"/>
+
+
+
+- S3中的对象，和普通文件有类似的行为，例如可以通过https访问文件内容。但是也有很多不同的地方。例如对象文件可以添加metadata。需要了解where and when 使用S3。
+
+  - Performance & Scaling
+  - Data protection
+  - Sharing
+
+- 不适用于共享给一个服务器。例如block storage或者NFS。
+
+  ###### ![image-20190830141233276](../assets/img/image-20190830141233276.png)
+
+
+
+- CloudFormation
+
+  ###### ![image-20190830141928451](../assets/img/image-20190830141928451.png)
+
+  - Template
+    - JSON or YAML
+    - Templates: 定义的是逻辑资源
+  - Stack：
+    - 基于template创建
+    - 创建物理资源
+  - 通过Hands-On联系熟悉了CloudFormation的工作方式，特别是针对Stack的下列操作
+    - Create
+    - Update
+    - Delete
+    - Best Practice：不要手动制定物力资源的名称，而是让CloudFormation自动创建。
+
+![image-20190830163914385](../assets/img/image-20190830163914385.png)
+
+
+
+- **总结**：这一部分学习了基本的管理console，S3的基本知识和CloudFormation。除了操作以外，比较重要的一点是从了解这些服务的用途，何时使用它们的角度去更深入的理解。
