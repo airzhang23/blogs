@@ -72,7 +72,26 @@ AWS在评价一个用户拥有什么样的权限时，会评价该用户的inlin
 ###### ![image-20190904134123121](../assets/img/image-20190904134123121.png)
 
 - IAM User的login URL可以定制，给一个容易记的名字，而不是用account id。
+
 - 这一部分通过Demo演示了如何添加一个用户，并设置MFA，设置Access Key。然后演示了如何在三种OS上安装`awscli` 工具，并通过`aws configure`进行配置，输入该用户的access key ID, access keys, region, output format(json)， 然后使用命令`aws s3 ls`来测试。
 
-[AWS Command Line Interface](https://aws.amazon.com/cli/).
+  - **Windows**
 
+    GUI 安装
+
+  - **Linux**
+
+    ```bash
+    sudo yum install epel-release
+    sudo yum install python-pip
+    sudo pip install awscli
+    ```
+
+  - **Mac**
+
+    ```bash
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    brew install awscli
+    ```
+
+[AWS Command Line Interface](https://aws.amazon.com/cli/).
