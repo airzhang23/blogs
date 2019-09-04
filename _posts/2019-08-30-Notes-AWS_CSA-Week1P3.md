@@ -42,6 +42,8 @@ Policy的总结：
 - IAM Users
   - 用户的认证使用用户名和密码，和可选的MFA
   - 而SDK和API的认证使用access key
+  - 每一个account下可以有多个IAM user
+  - 通常情况下，不建议使用最初创建的AWS root user来做日常的管理，而是在这个account下面创建用户，并附加administrator的权限，用该用户进行日常管理。
 
 ###### ![image-20190903160813533](../assets/img/image-20190903160813533.png)
 
@@ -54,4 +56,23 @@ IAM 用户有很多的属性。
 ###### ![image-20190903162335265](../assets/img/image-20190903162335265.png)
 
 - IAM Groups: [IAM Groups not real identities](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html) `Note that a group is not truly an "identity" in IAM because it cannot be identified as a Principal in a permission policy. It is simply a way to attach policies to multiple users at one time.`
+
+AWS在评价一个用户拥有什么样的权限时，会评价该用户的inline policy和managed policy，以及该用户所属的所有组的inline policy和managed policy。
+
+###### ![image-20190904132801648](../assets/img/image-20190904132801648.png)
+
+
+
+### Day 7
+
+- Access Keys: 一对key。Access keys consist of access key IDs and secret access keys. Access keys are the long-term credentials used to authenticate to AWS for anything but the console UI. This lesson walks through the architecture and discusses some key exam-relevant points.
+  - Access Key IDs
+  - Secret access keys：一旦生成，不能改变。只能重新生成新的。
+
+###### ![image-20190904134123121](../assets/img/image-20190904134123121.png)
+
+- IAM User的login URL可以定制，给一个容易记的名字，而不是用account id。
+- 这一部分通过Demo演示了如何添加一个用户，并设置MFA，设置Access Key。然后演示了如何在三种OS上安装`awscli` 工具，并通过`aws configure`进行配置，输入该用户的access key ID, access keys, region, output format(json)， 然后使用命令`aws s3 ls`来测试。
+
+[AWS Command Line Interface](https://aws.amazon.com/cli/).
 
