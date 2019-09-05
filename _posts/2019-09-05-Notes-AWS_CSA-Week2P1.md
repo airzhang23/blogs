@@ -8,7 +8,7 @@ img:
 
 - IAM roles: role的概念很容易理解，但是难点在于掌握什么时候在哪里使用。
 
-###### <img src=../assets/img/image-20190905154400504.png style="zoom:65%"/>
+![image-20190905175257393](../assets/img/image-20190905175257393.png)
 
 一个identity可以assume 一个role，并获取这个role的角色。
 
