@@ -77,7 +77,7 @@ AWS在评价一个用户拥有什么样的权限时，会评价该用户的inlin
 
   - **Windows**
 
-    GUI 安装
+    - GUI 安装
 
   - **Linux**
 
