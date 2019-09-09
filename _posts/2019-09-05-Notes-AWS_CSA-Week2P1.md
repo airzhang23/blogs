@@ -97,3 +97,6 @@ EC2 is ideal for:
 EC2的Instance有它的生命周期，如下图。
 
 ###### ![image-20190909145959643](../assets/img/image-20190909145959643.png)
+
+[EC2 文档](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
+
