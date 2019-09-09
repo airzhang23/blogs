@@ -86,3 +86,14 @@ EC2的存储，可以使用两种类型：
 - EBS Volume（Elastic Block Storage）: 可持久化，有快照
 
 ###### ![image-20190909145814737](../assets/img/image-20190909145814737.png)
+
+EC2 is ideal for:
+
+- Monolithic applications
+- Consistent, long-running compute scenarios
+- Applications that require full OS/runtime installations
+- Services, endpoints, and/or applications that require high availability
+
+EC2的Instance有它的生命周期，如下图。
+
+###### ![image-20190909145959643](../assets/img/image-20190909145959643.png)
