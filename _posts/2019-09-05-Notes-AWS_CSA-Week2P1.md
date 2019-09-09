@@ -69,3 +69,20 @@ img: image-20190906095056777.png
 - 角色切换 - Role Switching
 
   ##### ![image-20190906101712783](../assets/img/image-20190906101712783.png)
+
+### Day 9 - EC2 计算资源
+
+EC2是AWS的核心服务之一。虽然其他的公司可以提供虚拟机计算，但是EC2可以提供和AWS中其他的资源交互的功能和机制。这是EC2的强项之一。其实是运行在EC2 host上面的虚拟机，只占用物理机的一个部分资源。
+
+通过AWS创建EC2之前，先创建了key pair。这个key pair是两部分。一个是key 和fingerprint部分，一个是key.pem。key.pem是只有在创建的时候有机会下载。
+
+EC2是运行在一个AWS的网络里面，VPC。所以创建EC2之前需要创建VPC。
+
+EC2是运行在一个特定的AZ中的。
+
+EC2的存储，可以使用两种类型：
+
+- Instance Store Volume：高性能，临时，非持久化的卷。数据会丢失，例如HA，EC2在其他的host启动。
+- EBS Volume（Elastic Block Storage）: 可持久化，有快照
+
+###### ![image-20190909145814737](../assets/img/image-20190909145814737.png)
