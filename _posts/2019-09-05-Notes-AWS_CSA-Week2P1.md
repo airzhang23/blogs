@@ -104,4 +104,17 @@ EC2的Instance有它的生命周期，如下图。
 
 - **具体如何选择呢？**客户要知道自己的大概的计算，内存，存储的需求才能在最初选择比较接近的资源来使用。并且提供一定的多余的资源。当然也可以选择相对较小的资源，通过scale out功能在需要更多需求的时候再进行扩充。[EC2 Instance Type](https://aws.amazon.com/ec2/instance-types/)
 
+  在官方主页对这个问题有这样一段说明：
+
+  > ## Measuring Instance Performance
+  >
+  > Why should you measure instance performance?
+  >
+  > Amazon EC2 allows you to provision a variety of instances types, which provide different combinations of CPU, memory, disk, and networking. Launching new instances and running tests in parallel is easy, and we recommend measuring the performance of applications to identify appropriate instance types and validate application architecture. We also recommend rigorous load/scale testing to ensure that your applications can scale as you intend.
+  >
+  > Considerations for Amazon EC2 performance evaluation
+  >
+  > Amazon EC2 provides you with a large number of options across ten different instance types, each with one or more size options, organized into six distinct instance families optimized for different types of applications. We recommend that you assess the requirements of your applications and select the appropriate instance family as a starting point for application performance testing. You should start evaluating the performance of your applications by (a) identifying how your application needs compare to different instance families (e.g. is the application compute-bound, memory-bound, etc.?), and (b) sizing your workload to identify the appropriate instance size. There is no substitute for measuring the performance of your full application since application performance can be impacted by the underlying infrastructure or by software and architectural limitations. We recommend application-level testing, including the use of application profiling and load testing tools and services.
+
   ###### ![image-20190910111604797](../assets/img/image-20190910111604797.png)
+
