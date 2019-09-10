@@ -114,7 +114,50 @@ EC2的Instance有它的生命周期，如下图。
   >
   > Considerations for Amazon EC2 performance evaluation
   >
-  > Amazon EC2 provides you with a large number of options across ten different instance types, each with one or more size options, organized into six distinct instance families optimized for different types of applications. We recommend that you assess the requirements of your applications and select the appropriate instance family as a starting point for application performance testing. You should start evaluating the performance of your applications by (a) identifying how your application needs compare to different instance families (e.g. is the application compute-bound, memory-bound, etc.?), and (b) sizing your workload to identify the appropriate instance size. There is no substitute for measuring the performance of your full application since application performance can be impacted by the underlying infrastructure or by software and architectural limitations. We recommend application-level testing, including the use of application profiling and load testing tools and services.
+  > Amazon EC2 provides you with a large number of options across ten different instance types, each with one or more size options, organized into six distinct instance families optimized for different types of applications. We recommend that you assess the requirements of your applications and select the appropriate instance family as a starting point for application performance testing. You should start evaluating the performance of your applications by **(a) identifying how your application needs compare to different instance families (e.g. is the application compute-bound, memory-bound, etc.?), and (b) sizing your workload to identify the appropriate instance size.** There is no substitute for measuring the performance of your full application since application performance can be impacted by the underlying infrastructure or by software and architectural limitations. We recommend application-level testing, including the use of application profiling and load testing tools and services.
 
   ###### ![image-20190910111604797](../assets/img/image-20190910111604797.png)
 
+### Day 10
+
+- EC2 Storage
+
+  - Instance Store Volumes: 在EC2所运行的host主机内部，临时的存储
+  - EBS：SAN存储，block，具有持续性
+
+  ###### ![image-20190910155813521](../assets/img/image-20190910155813521.png)
+
+- 注意：EC2在console中，instance级别的start/stop/restart和 EC2中的OS级别的相同操作是不同的。
+- 这里做了一个实验，当在instance级别把EC2的实例stop后，再重新start，这时EC2会在不同的硬件上启动。也就意味着instance store volumes的数据就不存在了。
+
+> # Amazon EC2 Instance Store
+>
+> An *instance store* provides temporary block-level storage for your instance. This storage is located on disks that are physically attached to the host computer. Instance store is ideal for temporary storage of information that changes frequently, such as buffers, caches, scratch data, and other temporary content, or for data that is replicated across a fleet of instances, such as a load-balanced pool of web servers.
+>
+> An instance store consists of one or more instance store volumes exposed as block devices. The size of an instance store as well as the number of devices available varies by instance type.
+>
+> The virtual devices for instance store volumes are `ephemeral[0-23]`. Instance types that support one instance store volume have `ephemeral0`. Instance types that support two instance store volumes have `ephemeral0` and `ephemeral1`, and so on.
+
+这里讲的更明白：
+
+> ## Instance Store Lifetime
+>
+> You can specify instance store volumes for an instance only when you launch it. You can't detach an instance store volume from one instance and attach it to a different instance.
+>
+> The data in an instance store persists only during the lifetime of its associated instance. If an instance reboots (intentionally or unintentionally), data in the instance store persists. ==However, data in the instance store is **lost** under any of the following circumstances:==
+>
+> - The underlying disk drive fails
+> - The instance stops
+> - The instance terminates
+>
+> Therefore, do not rely on instance store for valuable, long-term data. Instead, use more durable data storage, such as Amazon S3, Amazon EBS, or Amazon EFS.
+>
+> ==When you stop or terminate an instance, every block of storage in the instance store is **reset**.== Therefore, your data cannot be accessed through the instance store of another instance.
+>
+> If you create an AMI from an instance, the data on its instance store volumes isn't preserved and isn't present on the instance store volumes of the instances that you launch from the AMI.
+>
+> If you change the instance type, an instance store will not be attached to the new instance type. For more information, see [Changing the Instance Type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-resize.html) .
+
+- EBS：在选择时，根据自己的需求来选择volume type。SSC，HDD，两种类型是主流。然后看是需要更多的IOPS还是吞吐量。另外，根据cost，访问的频率。
+- EBS的IOPS和吞吐量是有最大上限的，吞吐量上限：1750MiB/S；IOPS上限：80,000 IOPS。如果需要更多，就只能使用Instance Store Volumes。而ISV是临时性的，会丢失数据的。这点务必引起注意。
+- EBS是运行在AZ中的，所以在创建的时候，要确认好需要使用该EBS的EC2 Instance在哪个AZ。只有处于相同AZ的才可以attach EBS卷。
