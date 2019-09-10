@@ -100,3 +100,8 @@ EC2的Instance有它的生命周期，如下图。
 
 [EC2 文档](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
 
+- Instance Family，Type和Sizes
+
+- **具体如何选择呢？**客户要知道自己的大概的计算，内存，存储的需求才能在最初选择比较接近的资源来使用。并且提供一定的多余的资源。当然也可以选择相对较小的资源，通过scale out功能在需要更多需求的时候再进行扩充。[EC2 Instance Type](https://aws.amazon.com/ec2/instance-types/)
+
+  ###### ![image-20190910111604797](../assets/img/image-20190910111604797.png)
