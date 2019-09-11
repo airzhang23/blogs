@@ -62,4 +62,6 @@ img:
 
     `ami-0abcdef1234567890`
 
+  - [EC2 Instance Meta-data资料](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html)
+
   ###### ![image-20190911180547555](../assets/img/image-20190911180547555.png)
