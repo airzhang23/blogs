@@ -161,3 +161,5 @@ EC2的Instance有它的生命周期，如下图。
 - EBS：在选择时，根据自己的需求来选择volume type。SSC，HDD，两种类型是主流。然后看是需要更多的IOPS还是吞吐量。另外，根据cost，访问的频率。
 - EBS的IOPS和吞吐量是有最大上限的，吞吐量上限：1750MiB/S；IOPS上限：80,000 IOPS。如果需要更多，就只能使用Instance Store Volumes。而ISV是临时性的，会丢失数据的。这点务必引起注意。
 - EBS是运行在AZ中的，所以在创建的时候，要确认好需要使用该EBS的EC2 Instance在哪个AZ。只有处于相同AZ的才可以attach EBS卷。
+
+[EBS 卷文档](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html)
