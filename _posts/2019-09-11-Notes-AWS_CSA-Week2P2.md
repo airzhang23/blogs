@@ -44,5 +44,22 @@ img:
 
   - 隐藏rule：缺省的，deny。
 
+  - Security Group无法指定deny rule，只能设置允许的rule。
+
+  - stateful的，也就是允许出去的规则，也允许inbound的trafic。而Network Access Control 不是stateful的，所以需要两条规则规定inbound和outbound。
+
+  - source的部分还可以指定其他的Security group。例如所有的server 绑定了特定的security group的都可以互相之间用任何方式通讯。
+
 - Instance Metadata：实例的元数据
 
+  - 这里的获取meta data的URL需要记住。
+
+    [http://169.254.169.254/latest/meta-data/](http://169.254.169.254/latest/meta-data/)
+
+  - 例如在EC2中通过命令`curl -s http://169.254.169.254/latest/meta-data/`就可以获取该EC2 实例的meta data。
+
+    `[ec2-user ~]$ curl http://169.254.169.254/latest/meta-data/ami-id `
+
+    `ami-0abcdef1234567890`
+
+  ###### ![image-20190911180547555](../assets/img/image-20190911180547555.png)
