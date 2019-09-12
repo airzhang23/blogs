@@ -68,7 +68,7 @@ img:
 
 - Lab: 可以在创建EC2的时候，在Advanced details里面添加EC2启动时执行的指令。例如下面的代码，就可以安装好httpd等服务，并且获取图片，设置好web server并启动。
 
-  ```
+  ```bash
   #!/bin/bash
   yum update -y
   yum install -y httpd
@@ -86,3 +86,4 @@ img:
   ```
 
   
+
