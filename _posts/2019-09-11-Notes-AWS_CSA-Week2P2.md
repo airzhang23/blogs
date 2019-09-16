@@ -85,5 +85,35 @@ img:
   service httpd start
   ```
 
-  
+  ### Day 12
+
+  - AMI: 
+
+  AMIs (Amazon Machine Images) are used to launch instances in AWS. AWS supplies AMIs that cover most standard operating systems (Linux and Windows), and AMIs containing commercial software are available on the AWS Marketplace. Additionally, custom AMIs can be created by AWS customers and used directly or shared with other accounts.
+
+  ###### ![image-20190916133522518](../assets/img/image-20190916133522518.png)
+
+  - 创建AMI的步骤：
+    - 创建一个EC2 Instance
+    - Stop Instance
+    - 右键点击Instance，选择Image-> Create Image
+    - 系统会创建一个Snapshot，然后添加所有的Volume，创建AMI
+    - AMI是一个指向原有的Snapshot的Container
+    - 可以为AMI设置权限，Public，或者Private
+  - 使用AMI
+    - 选择创建好的AMI，选择launch
+    - 然后会弹出EC2创建的画面，只不过是从计算资源开始，而不是从Image开始
+    - 后面的设置和选项都和普通的EC2 Instance的创建相同
+  - AMI，可以对现有的Image做一些调整，设置的改变，如果以后需要重复使用，就可以使用AMI的方式打包，然后直接从这里开始部署实例。而不需要每次都从开始进行。
+
+- Bootstrap:
+
+  Bootstrapping is the process of providing "build" directives to an EC2 instance. Bootstrapping in EC2 uses user data and can take in shell script-style commands or cloud-init directives.
+
+  ###### ![image-20190916140034239](../assets/img/image-20190916140034239.png)
+
+  - AMI无法做任何动态的设置，所有的设定都是预先设定好的。
+  - Bootstrap可以在创建Instance时，可以加上动态的设置。可以通过两种方式：
+    - Shell Scripts
+    - cloud-init: [cloud-init doc](https://cloudinit.readthedocs.io/en/latest/)
 
