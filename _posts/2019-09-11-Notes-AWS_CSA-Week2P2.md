@@ -117,3 +117,51 @@ img:
     - Shell Scripts
     - cloud-init: [cloud-init doc](https://cloudinit.readthedocs.io/en/latest/)
 
+- Instance ENI, IP and DNS
+
+  - ENI: EC2 Network Interface
+
+  - Private Instance: 没有public IP的Instance，只拥有private IP。Private IP会分配到ENI上，并且不会随着Instance的状态改变。
+
+    ###### ![image-20190916161610645](../assets/img/image-20190916161610645.png)
+
+  - Public Instance： 拥有public IP，可以从Internet访问到的Instance。Public IP会发生改变，例如stop/start Instance；但是restart instance不会改变public IP。Private IP的部分和Private Instance相同。
+
+    ###### ![image-20190916161705831](../assets/img/image-20190916161705831.png)
+
+  - 从EC2的角度看，public IP address并不属于EC2，所以从ifconfig看，只能看到private IP。==Internet Gateway==实现的是从==private IP <---> public IP==之间的转换。
+
+  - 所以，如果希望EC2 Instance具备不变的public IP和DNS名称，就不能使用Public IP，而是使用Elastic IP。Elastic IP是预先从AWS的IP地址池中分配一个地址，然后分配给相应的EC2 Instance。该IP地址是独立于EC2的。
+
+  - Elastic创建后，并且和instance 做了associate后，会替换所有动态的可变的public IP，并且Private IP也会改变成在associate Elastic IP地址时指定的private IP。这个private IP会和Elastic IP之间做mapping。
+
+  ![image-20190916163712250](../assets/img/image-20190916163712250.png)
+
+- Instance Roles
+
+  Instance roles are IAM roles that can be associated with EC2 instances using instance profiles. 
+
+  ###### ![image-20190917114709347](../assets/img/image-20190917114709347.png)
+  - Demo:
+
+    - 创建一个EC2 Instance
+
+    - 创建了一个S3 Bucket
+
+    - 连接EC2 Instance，使用`aws s3 ls` , 因为没有运行`aws configure` 命令失败。当然可以通过配置access key，可以访问S3。但是这样有风险。
+
+    - 此时 Instance Profile登场了。Instance Profile是一个容器，允许EC2 instance assume role。
+
+    - 在IAM里面创建一个Role，选择AWS Services，EC2
+
+    - 设置permission，这个例子里面给了S3ReadOnly的权限
+
+    - 设置Role的名称，创建好role
+
+    - 然后需要把这个role和EC2 instance 链接起来
+
+    - Instnce Settings，attach/replace IAM role，选择刚才创建的role（**这里其实选择的是instance profile，只不过看起来是role**）
+
+    - 此时，这个EC2会assume这个role，也就是可以使用`aws s3 ls`就可以看到bucket的信息了。
+
+      
