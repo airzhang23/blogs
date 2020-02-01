@@ -17,7 +17,7 @@ title: How to Learn Anything Fast - Nishant Kasibhatla
 
 **Learn (INPUT) - [Reflection - Implement - Share] (OUTPUT)**
 
-**X INPUT & 2X OUTPUT at least**
+$1X INPUT +  2X OUTPUT (minimum)$
 
 **我的学习心得：**
 
