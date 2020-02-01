@@ -1,6 +1,6 @@
 ---
 layout: post
-title:How to Learn Anything Fast - Nishant Kasibhatla
+title: How to Learn Anything Fast - Nishant Kasibhatla
 ---
 
 > "For true mastery, you need to focus more on the ==OUTPUT==, rather than the INPUT. -Nishant Kasibhatla"
