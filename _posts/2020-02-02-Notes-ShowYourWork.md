@@ -3,6 +3,7 @@ layout: post
 title: Show Your Work! 10 Ways to Share your Creativity and Get Discovered
 ---
 
+#showyourwork
 
 ### I: Input 阶段
 
@@ -19,10 +20,6 @@ title: Show Your Work! 10 Ways to Share your Creativity and Get Discovered
 
 
 >“All you have to do is show your work.”
-
-
-
-
 
 #### 1. You Don't have to be a genius
 
@@ -100,10 +97,93 @@ Be an Ameteur - 做一个业余者
 
 注册一个域名，构建一个网站，博客，让你的网站和你一起成长。不断积累。
 
+你可以有完全的控制权，不用担心被别人操控，不用做出让步。
 
+
+
+"Build a good name. **Keep your name clean**. Don't make compromises. Don't worry about making a bunch of money or being successful. **Be concerned with doing good work**...and if you an build a good name, eventually that name will be its oen currency."
+
+
+
+#### 4. Open up your cabinet of curiosities
+
+> “The problem with hoarding is you end up living off your reserves. Eventually, you’ll become stale. If you give away everything you have, you are left with nothing. This forces you to look, to be aware, to replenish. . . . Somehow the more you give away, the more comes back to you.”
+> — Paul Arden”
+
+收集和创造之间并没有太大差别？？？
+
+
+
+你的品位，你的收藏，你的作品，创作相互激发，相互连接。
+
+
+
+> "Do what you do best and link to the rest."
+>
+> - Jeff Jarvis
+
+
+
+如何分享他人的作品？
+
+![image-20200203155605465](../assets/img/image-20200203155605465.png)
+
+
+
+#### 5. Tell good stories
+
+给你的作品讲一个好故事。
+
+一个好故事最重要的就是结构。一个好的故事结构应该是简洁，有力富有逻辑性。
+
+
+
+#### 6. Teach what you know
+
+烤肉店的故事。
+
+烤肉的过程其实并不复杂，但是需要常年累月的积累，才能做好。店主把烤肉的方法交给了很多人，包括自己的店员，但是因为这些人没有足够的联系依然无法达到店主的水平。
+
+
+
+当你掌握了一项新的技能后，就开始学习新的技能。
+
+不守旧，在现有的基础上不断地学习，积累，突破。
+
+
+
+> “Whenever Picasso learned how to do something, he abandoned it.”
+> — Milton Glaser”
+
+后面还谈到了如何应对负面的评价，如何应对批评，苛责。比如关掉评论功能。
 
 ### II: Reflection 阶段
 
+这本书里面有很多不错的内容。
 
 
-####
+
+- 保持初学者的心境，不守旧，这也是保持一种空的状态，能够接纳新的事物，思想。这一点可以适用于工作，生活的方方面面。我接下来要尝试这种方法。这也可以帮助我用新的视角看待旧的事物。
+- **"Share Your Work"**，这句话我觉得非常棒。不是去分享哪些无聊的东西。
+- 如果你不分享，不发出自己的声音，别人怎么找到你？
+- 分享过程，分享值得分享的东西，怎么甄别呢？用"So What?"。
+- 有一个好的故事，好的故事需要有好的结构。过去，现在，未来。
+- 对待他人的工作成果就如同对待自己的，给他人相应的credit。
+- 书后面的书单我觉得不错，可以挑选一些自己看。
+- 幕后的素材，思路等我觉得很好，可以借鉴。
+
+
+
+`“BOOKS ARE MADE OUT OF BOOKS.” — CORMAC MCCARTHY
+Brian Eno, A Year With Swollen Appendices
+Steven Johnson, Where Good Ideas Come From
+David Byrne, How Music Works
+Mike Monteiro, Design Is a Job
+Kio Stark, Don’t Go Back to School
+Ian Svenonius, Supernatural Strategies for Making a Rock ‘n’ Roll Group
+Sidney Lumet, Making Movies
+P.T. Barnum, The Art of Money Getting”
+
+
+
+![image-20200204093709714](../assets/img/image-20200204093709714.png)
