@@ -174,15 +174,18 @@ Be an Ameteur - 做一个业余者
 
 
 
-`“BOOKS ARE MADE OUT OF BOOKS.” — CORMAC MCCARTHY
-Brian Eno, A Year With Swollen Appendices
-Steven Johnson, Where Good Ideas Come From
-David Byrne, How Music Works
-Mike Monteiro, Design Is a Job
-Kio Stark, Don’t Go Back to School
-Ian Svenonius, Supernatural Strategies for Making a Rock ‘n’ Roll Group
-Sidney Lumet, Making Movies
-P.T. Barnum, The Art of Money Getting”
+> **“BOOKS ARE MADE OUT OF BOOKS.” — CORMAC MCCARTHY**
+>
+> 
+>
+> Brian Eno, A Year With Swollen Appendices
+> Steven Johnson, Where Good Ideas Come From
+> David Byrne, How Music Works
+> Mike Monteiro, Design Is a Job
+> Kio Stark, Don’t Go Back to School
+> Ian Svenonius, Supernatural Strategies for Making a Rock ‘n’ Roll Group
+> Sidney Lumet, Making Movies
+> P.T. Barnum, The Art of Money Getting”
 
 
 
