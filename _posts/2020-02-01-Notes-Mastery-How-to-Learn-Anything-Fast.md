@@ -7,7 +7,7 @@ title: How to Learn Anything Fast - Nishant Kasibhatla
 
 
 
-> "A mind taht is stretched by a new experience can never go back to its old dimensions - Oliver Wendell Holmes "
+> "A mind that is stretched by a new experience can never go back to its old dimensions - Oliver Wendell Holmes "
 
 > "You learning ability decides your earning capacity - Nishant Kasibhatla"
 

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Show Your Work! 10 Ways to Share your Creativity and Get Discovered
+title: Notes of《Show Your Work! 10 Ways to Share your Creativity and Get Discovered》by Austin Kleon
+tags: [reading,books,notes]
 ---
 
 #showyourwork
